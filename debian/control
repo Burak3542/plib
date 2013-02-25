@@ -1,0 +1,40 @@
+Source: plib
+Section: devel
+Priority: extra
+Maintainer: Bradley Smith <bradsmith@debian.org>
+Standards-Version: 3.8.1
+Build-Depends: libgl1-mesa-dev | libgl-dev, freeglut3-dev, libx11-dev, libxmu-dev, debhelper (>= 7), libxi-dev, quilt, autoconf, automake, libtool
+Homepage: http://plib.sourceforge.net/
+Vcs-Git: http://git.brad-smith.co.uk/git/debian/pkg-plib.git
+Vcs-Browser: http://git.brad-smith.co.uk/?p=debian/pkg-plib.git
+
+Package: libplib1
+Section: libs
+Architecture: any
+Depends: freeglut3, libgl1-mesa-glx | libgl1, ${misc:Depends}, ${shlibs:Depends}
+Conflicts: plib1.8.4c2
+Replaces: plib1.8.4c2
+Description: Portability Libraries: Run-time package
+ Provides a Joystick interface, a simple GUI built on top of OpenGL,
+ some standard geometry functions, a sound library and a simple scene
+ graph API built on top of OpenGL.
+ .
+ This package provides the shared libraries. It should be installed
+ automatically by packages which need it.
+
+Package: libplib-dev
+Section: libdevel
+Architecture: any
+Depends: libplib1 (= ${binary:Version}), freeglut3-dev, libgl1-mesa-dev | libgl-dev, ${misc:Depends}
+Conflicts: plib1.8.4-dev
+Replaces: plib1.8.4-dev
+Provides: plib1.8.4-dev
+Description: Portability Libraries: Development package
+ Provides a Joystick interface, a simple GUI built on top of OpenGL,
+ some standard geometry functions, a sound library and a simple scene
+ graph API built on top of OpenGL.
+ .
+ This package provides the static libraries, the header files and the
+ development links to the shared libraries. You need this package if you
+ want to compile software which needs plib.
+
