@@ -1,7 +1,8 @@
-plib (1.8.5-r2173) unstable; urgency=low
+plib (1.8.5-r2173ubuntu1) UNRELEASED; urgency=low
 
   * New upstream release
-
+  * Switch to dpkg-source 3.0 (quilt) format
+ 
  -- Alexander Deynichenko <adeynichenko@gmail.com>  Mon, 25 Feb 2013 07:39:43 +0400
 
 plib (1.8.5-5) unstable; urgency=low
