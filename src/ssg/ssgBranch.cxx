@@ -464,7 +464,7 @@ void AddLeafToTriangles(ssgVtxArray *pSrc , ssgVtxArray *pDest)
 
 	// State
 	pDest->setState(pSrc ->getState());
-	delete aiOld2NewIndex ;
+	delete[] aiOld2NewIndex ;
 }
 
 
