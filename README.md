@@ -1,4 +1,4 @@
-plib-flightgear
-===============
+PLIB debianized for Flightgear
+==============================
 
-PLIB library for Flightgear
+trunk version with patches
